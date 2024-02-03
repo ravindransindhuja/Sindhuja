@@ -1,0 +1,8 @@
+table,th,tr {
+  border: 3px double cadetblue;
+  align-items: center;
+}
+h3{
+  color: midnightblue;
+}
+

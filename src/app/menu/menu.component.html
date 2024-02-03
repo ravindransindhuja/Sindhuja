@@ -1,0 +1,11 @@
+<div class="navbar navbar-expand-md  bg-dark">
+<ul class = "navbar-nav">
+  <a class = "nav nav-link" routerLink = '/home'>Home</a>
+  <a class = "nav nav-link" routerLink = '/todolist' *ngIf="this.authService.loggedIn()">Todo</a>
+</ul >
+  <ul class = "navbar-nav  navbar-collapse justify-content-end">
+    <a class = "nav nav-link" routerLink = '/login' *ngIf="!this.authService.loggedIn()">Login</a>
+    <a class = "nav nav-link" routerLink = '/logout' *ngIf="this.authService.loggedIn()">Logout</a>
+    <a class = "nav nav-link" routerLink = '/signup' *ngIf="!this.authService.loggedIn()">SignUp</a>
+</ul>
+</div>

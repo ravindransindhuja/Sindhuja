@@ -1,0 +1,9 @@
+<div class="container">
+<h3>Register to Todo Portal</h3> <br>
+<small  *ngIf="invalidpassword" class= "alert alert-danger">Passwords do not match .</small> <br><br><br>
+Username : <input type = "text" name="username" [(ngModel)]="userdetails.username" > <br><br>
+Password : <input type = "password"  name = "password" [(ngModel)]="userdetails.password"> <br><br>
+Confirm Password : <input type = "password" name="confirmpassword" [(ngModel)]="userdetails.confirmpassword"><br><br>
+Age : <input type="number" name="age" [(ngModel)]="userdetails.age"><br><br>
+<button class = "btn btn-success" (click)="register()">Register</button>
+</div>

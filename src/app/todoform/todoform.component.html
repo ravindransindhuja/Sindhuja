@@ -1,0 +1,8 @@
+<div class="container">
+  <h3 >{{title}}</h3>
+  Description: <input type="text" [(ngModel)]="todo.description" > <br><br>
+  Target Date : <input type="date" [ngModel]="todo.targetDate | date: 'yyyy-MM-dd'"  (ngModelChange) = "todo.targetDate = $event"> <br><br>
+  Is completed : <input type="checkbox" [(ngModel)]="todo.isCompleted" ><br><br>
+  <button class = "btn btn-success" (click)="addUpdate()">{{action}}</button>
+</div>
+
