@@ -37,6 +37,7 @@ export class DaoservicesService {
   }
 
   validateUserId(username, password) {
+    /*this is  not secure*/
     return this.httpClient.get(`http://localhost:8080/user/login/${username}/${password}` ) ;
   }
 
